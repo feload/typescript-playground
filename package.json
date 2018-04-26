@@ -1,0 +1,20 @@
+{
+  "name": "typescript-playground",
+  "version": "1.0.0",
+  "description": "This repo contains some experiments I built in the process of learning TS.",
+  "main": "index.js",
+  "scripts": {
+    "tsc-l": "tsc learnig/*.ts -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feload/typescript-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feload/typescript-playground/issues"
+  },
+  "homepage": "https://github.com/feload/typescript-playground#readme"
+}
