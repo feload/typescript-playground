@@ -13,6 +13,9 @@ var __extends = (this && this.__extends) || (function () {
 var Animal = /** @class */ (function () {
     function Animal() {
     }
+    Animal.itsType = function () {
+        return typeof this;
+    };
     Animal.prototype.breath = function () {
         console.log("Breathing...");
     };
@@ -46,6 +49,41 @@ var Tiger = /** @class */ (function (_super) {
     };
     return Tiger;
 }(Mammal));
-var tigger = new Tiger();
-tigger.eatMeat();
-tigger.roar();
+// const tigger = new Tiger();
+// tigger.eatMeat();
+// tigger.roar();
+// console.log(Animal.itsType()); // function
+// Abstract classes.
+var Vehicle = /** @class */ (function () {
+    function Vehicle() {
+    }
+    Vehicle.prototype.move = function () {
+        console.log('Moving');
+    };
+    return Vehicle;
+}());
+var Car = /** @class */ (function (_super) {
+    __extends(Car, _super);
+    function Car() {
+        return _super.call(this) || this;
+    }
+    return Car;
+}(Vehicle));
+var beetle = new Car();
+// const car = new Vehicle(); => Error
+beetle.move();
+// Singleton.
+var Session = /** @class */ (function () {
+    function Session() {
+        this.id = Math.random().toString();
+    }
+    Session.getSession = function () {
+        if (!Session.instance)
+            Session.instance = new Session();
+        return Session.instance;
+    };
+    return Session;
+}());
+console.log(Session.getSession());
+console.log(Session.getSession());
+console.log(Session.getSession());

@@ -3,6 +3,11 @@
 // Animal class.
 class Animal {
   constructor () { }
+
+  static itsType () : string {
+    return typeof this;
+  }
+
   protected breath () : void {
     console.log("Breathing...");
   }
@@ -38,6 +43,47 @@ class Tiger extends Mammal {
   }
 }
 
-const tigger = new Tiger();
-tigger.eatMeat();
-tigger.roar();
+// const tigger = new Tiger();
+// tigger.eatMeat();
+// tigger.roar();
+// console.log(Animal.itsType()); // function
+
+// Abstract classes.
+abstract class Vehicle {
+  constructor () {}
+  public move () : void {
+    console.log('Moving');
+  }
+}
+
+class Car extends Vehicle {
+  constructor () {
+    super();
+  }
+}
+
+const beetle = new Car();
+// const car = new Vehicle(); => Error
+beetle.move();
+
+
+// Singleton.
+
+class Session {
+  static instance: Session;
+  public id:string;
+
+  private constructor (){
+    this.id = Math.random().toString();
+  }
+  static getSession (){
+    if (!Session.instance)
+      Session.instance = new Session();
+
+    return Session.instance;
+  }
+}
+
+console.log(Session.getSession());
+console.log(Session.getSession());
+console.log(Session.getSession());
