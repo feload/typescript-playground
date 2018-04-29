@@ -1,4 +1,6 @@
+// -------------------------------
 // Tuples
+// -------------------------------
 
 let tup: [string, number] = ["Key string", 100];
 let tupArr: [string, number][] = [

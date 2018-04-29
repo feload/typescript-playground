@@ -1,4 +1,6 @@
-// Classes
+// -------------------------------
+// Classes.
+// -------------------------------
 
 // Animal class.
 class Animal {
@@ -65,7 +67,6 @@ class Car extends Vehicle {
 const beetle = new Car();
 // const car = new Vehicle(); => Error
 beetle.move();
-
 
 // Singleton.
 

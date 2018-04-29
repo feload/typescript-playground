@@ -1,4 +1,6 @@
+// -------------------------------
 // Strings.
+// -------------------------------
 
 let oneString: string = "Super string";
 let oneMoreString: string = `Say what? ${oneString}`;

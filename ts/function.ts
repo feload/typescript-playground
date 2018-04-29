@@ -1,4 +1,6 @@
+// -------------------------------
 // Functions.
+// -------------------------------
 
 let personName: string = "Felipe";
 let personLastName: string = "López";

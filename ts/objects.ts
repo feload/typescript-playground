@@ -1,5 +1,7 @@
+// -------------------------------
 // Objects and types.
 // You can assign only properties previously defined.
+// -------------------------------
 
 type Mutant = {
   name: string,

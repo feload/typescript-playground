@@ -1,4 +1,6 @@
+// -------------------------------
 // Numbers.
+// -------------------------------
 
 let aNumber: number = 0.1;
 let anotherNumber: number = 0;

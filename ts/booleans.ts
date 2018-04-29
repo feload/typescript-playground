@@ -1,4 +1,6 @@
+// -------------------------------
 // Booleans.
+// -------------------------------
 
 // You define a boolean variable by adding ":boolean".
 let boolVar:boolean = true;
